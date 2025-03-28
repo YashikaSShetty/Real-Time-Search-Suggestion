@@ -1,0 +1,7 @@
+<!-- <p>search-bar works!</p> -->
+<div class="search-container">
+    <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (input)="onSearch()" class="search-input" />
+    <ul *ngIf="suggestion.length">
+    <li *ngFor="let suggest of suggestion">{{suggestion}}</li>
+</ul>
+</div>
